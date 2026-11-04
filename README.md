@@ -3,7 +3,7 @@
 てんしようちえん 75しゅうねん記念のブラウザゲームです。
 園児たちを左右に動かし、ゲートを通って仲間をふやしながら、シャボン玉で「もこもこ」を包んでゴールをめざします。
 
-- 遊ぶ：https://sanatomo921-spec.github.io/minna-de-75/
+- 遊ぶ：https://sanatomo921-spec.github.io/minna-de-75-pages/
 - スマホ（iPhone Safari・Android Chrome）とパソコンのブラウザで遊べます。インストールは不要です。
 
 このフォルダは公開用にビルドしたファイルだけを置いています。
