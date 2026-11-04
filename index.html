@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+    <meta name="theme-color" content="#7cc8ff" />
+    <title>みんなで75人！｜てんしようちえん 75しゅうねん</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%AD%90%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800;900&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="./assets/index-CbMUyD4h.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-B50Mrzme.css">
+  </head>
+  <body>
+    <div id="app">
+      <div id="stage3d"></div>
+      <canvas id="confetti"></canvas>
+
+      <!-- ===== タイトル ===== -->
+      <section id="title" class="screen">
+        <div class="title-box">
+          <img id="title-deco" alt="" hidden />
+          <div id="title-text">
+            <p class="title-small">てんしようちえん 75しゅうねん</p>
+            <h1>みんなで<span class="big75">75</span>人！</h1>
+            <p class="title-sub">〜おともだちを あつめて、おいわいしよう！〜</p>
+          </div>
+        </div>
+        <button id="btn-play" class="btn btn-big">あそぶ</button>
+      </section>
+
+      <!-- ===== ステージえらび ===== -->
+      <section id="select" class="screen" hidden>
+        <h2 class="panel-title">ステージを えらんでね</h2>
+        <div id="shop">
+          <p class="shop-title"><i class="coin"></i>おほしさま <b id="shop-coins">0</b>　<small>で ごほうび</small></p>
+          <div id="shop-items"></div>
+        </div>
+        <div id="shop-pop"></div>
+        <div id="stage-list"></div>
+        <button id="btn-select-back" class="btn btn-small">もどる</button>
+      </section>
+
+      <!-- ===== プレイ中の表示 ===== -->
+      <section id="hud" hidden>
+        <div class="hud-top">
+          <div id="hud-stage"></div>
+          <div id="hud-count"><span id="count-num">3</span><span class="count-unit">にん</span></div>
+          <div id="hud-progress">
+            <div id="progress-fill"></div>
+            <div id="progress-kid"></div>
+            <div id="progress-goal"></div>
+          </div>
+          <div id="count-pop"></div>
+        </div>
+        <div id="guide">
+          <div class="guide-hand"></div>
+          <p>ゆびで さゆうに うごかしてね</p>
+          <p class="guide-start">タッチで スタート！</p>
+        </div>
+        <div id="hud-power"></div>
+        <button id="btn-special" aria-label="おおきな シャボン玉"><span>おおきな<br>シャボン玉</span></button>
+        <div id="hud-coins"><i class="coin"></i><b>0</b></div>
+        <div id="stair-pop"></div>
+        <div id="power-pop"></div>
+        <button id="btn-pause" class="btn-round" aria-label="ひとやすみ"><span class="pause-icon"></span></button>
+      </section>
+
+      <!-- ===== ひとやすみ ===== -->
+      <section id="pause" class="screen dim" hidden>
+        <div class="panel">
+          <h2 class="panel-title">ひとやすみ</h2>
+          <button id="btn-resume" class="btn">つづける</button>
+          <button id="btn-retry-p" class="btn btn-sub">はじめから</button>
+          <button id="btn-select-p" class="btn btn-sub">ステージを えらぶ</button>
+          <button id="btn-sound" class="btn btn-small"></button>
+        </div>
+      </section>
+
+      <!-- ===== クリア ===== -->
+      <section id="clear" class="screen" hidden>
+        <div class="panel clear-panel">
+          <img id="clear-deco" alt="" hidden />
+          <h2 class="clear-title" id="clear-title">ゴール！</h2>
+          <div id="clear-stars"></div>
+          <p id="clear-count"></p>
+          <p id="clear-msg"></p>
+          <p id="clear-pose"></p>
+          <p id="clear-coins"></p>
+          <p id="clear-best"></p>
+          <div id="clear-next">
+            <div id="clear-bar"><div id="clear-bar-fill"></div><span class="bar-star"></span></div>
+            <p id="clear-hint"></p>
+          </div>
+          <button id="btn-next" class="btn">つぎの ステージへ</button>
+          <div class="clear-buttons">
+            <button id="btn-retry" class="btn btn-sub">もういちど</button>
+            <button id="btn-select-c" class="btn btn-sub">ステージ</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 75周年のおいわい（最終ステージ） ===== -->
+      <section id="celebrate" class="screen" hidden>
+        <div class="cele-text">
+          <p class="cele-l1">てんしようちえん</p>
+          <p class="cele-l2"><span class="cele-75">75</span>しゅうねん</p>
+          <p class="cele-l3">おめでとう！</p>
+          <p id="cele-sub"></p>
+        </div>
+        <p class="cele-tap">タッチで つぎへ</p>
+      </section>
+
+      <div id="loading" class="screen"><p>よみこみちゅう…</p></div>
+    </div>
+  </body>
+</html>
