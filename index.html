@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800;900&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="./assets/index-DWogQ4GU.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DVz6VqH0.css">
+    <script type="module" crossorigin src="./assets/index-BDdatHy5.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-N_hPqoG5.css">
   </head>
   <body>
     <div id="app">
@@ -28,7 +28,92 @@
           </div>
         </div>
         <button id="btn-sound-t" class="btn btn-small"></button>
-        <button id="btn-play" class="btn btn-big">あそぶ</button>
+        <div class="title-actions">
+          <button id="btn-play" class="btn btn-big">あそぶ</button>
+          <button id="btn-howto" class="btn btn-small">あそびかた</button>
+        </div>
+      </section>
+
+      <!-- ===== あそびかた ===== -->
+      <section id="howto" class="screen" hidden>
+        <h2 class="panel-title">あそびかた</h2>
+        <p class="howto-goal">おともだちを たくさん あつめて、<br />ゴールの ようちえんまで はしろう！</p>
+
+        <article class="howto-card">
+          <h3><span class="howto-num">1</span>ゆびで うごかそう</h3>
+          <p>ゆびを さゆうに うごかすと、みんなが ついてくるよ。</p>
+          <p class="howto-note">パソコンは マウスか ← → キーで うごかせるよ。</p>
+        </article>
+
+        <article class="howto-card">
+          <h3><span class="howto-num">2</span>ゲートを えらぼう</h3>
+          <p class="howto-chips"><b class="chip good">＋10</b><b class="chip good">×2</b><span>おともだちが ふえるよ</span></p>
+          <p class="howto-chips"><b class="chip bad">－5</b><b class="chip bad">÷2</b><span>へっちゃうから よけよう</span></p>
+        </article>
+
+        <article class="howto-card">
+          <h3><span class="howto-num">3</span>シャボン玉で つつもう</h3>
+          <div class="howto-row">
+            <img data-asset="bubble" alt="" />
+            <p>シャボン玉は じどうで とぶよ。まえの じゃまな ものを つつんで、みちを あけよう。</p>
+          </div>
+          <p class="howto-note">じゃまな ものに ぶつかると、おともだちが へるよ。でも さいごの 1人は のこるから だいじょうぶ！</p>
+        </article>
+
+        <article class="howto-card">
+          <h3><span class="howto-num">4</span>パワーアップしよう</h3>
+          <p>「アップ」の ゲートを くぐると、シャボン玉が つよくなって、みんなの すがたも かわるよ。</p>
+          <ul class="howto-list">
+            <li><b class="chip power">つよさ</b>マントが つくよ</li>
+            <li><b class="chip rapid">かず</b>てんしの はねが つくよ</li>
+            <li><b class="chip big">おおきさ</b>ぼうしに ほしが つくよ</li>
+          </ul>
+        </article>
+
+        <article class="howto-card">
+          <h3><span class="howto-num">5</span>みちの アイテム</h3>
+          <div class="howto-row">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="19" y="5" width="10" height="9" rx="2" fill="#ff8fb1"/><path d="M17 14h14l4 9v16a4 4 0 0 1-4 4H17a4 4 0 0 1-4-4V23z" fill="#9fdcff" stroke="#4fb3ff" stroke-width="2"/><circle cx="24" cy="31" r="6" fill="#fff" opacity=".85"/></svg>
+            <p><b>シャボンえき</b>　つよさが 1つ あがるよ。</p>
+          </div>
+          <div class="howto-row">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M5 26a19 19 0 0 1 38 0z" fill="#ff8fb1"/><path d="M17 26a19 19 0 0 1 7-19 19 19 0 0 1 7 19z" fill="#ffd54a"/><path d="M24 26v14a4 4 0 0 1-8 0" fill="none" stroke="#7a5a4a" stroke-width="3" stroke-linecap="round"/></svg>
+            <p><b>にじの かさ</b>　しばらく まもって くれるよ。おやぶんには きかないよ。</p>
+          </div>
+        </article>
+
+        <article class="howto-card">
+          <h3><span class="howto-num">6</span>おおきな シャボン玉</h3>
+          <p>シャボン玉を あてたり、おほしさまを ひろったり すると、ボタンの まわりが たまるよ。いっぱいに なったら ボタンを おそう。まえの みんなを いっきに つつむよ！</p>
+        </article>
+
+        <article class="howto-card">
+          <h3><span class="howto-num">7</span>もこもこと おやぶん</h3>
+          <div class="howto-row">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="12" cy="13" r="6" fill="#ffc4dc"/><circle cx="36" cy="13" r="6" fill="#ffc4dc"/><circle cx="24" cy="27" r="18" fill="#ffd9e8"/><circle cx="17" cy="24" r="2.5" fill="#3a2420"/><circle cx="31" cy="24" r="2.5" fill="#3a2420"/><path d="M19 31q5 5 10 0" fill="none" stroke="#d63a4a" stroke-width="2.5" stroke-linecap="round"/></svg>
+            <p><b>もこもこ</b>　シャボン玉で つつもう。ぶつかると おしくらまんじゅう！ おともだちと いっしょに おそらへ いくよ。</p>
+          </div>
+          <div class="howto-row">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="29" r="17" fill="#d9c8ff"/><path d="M13 15l1-11 6 6 4-7 4 7 6-6 1 11z" fill="#ffc93a"/><path d="M15 26q3-4 6 0M27 26q3-4 6 0" fill="none" stroke="#4a2c20" stroke-width="2.5" stroke-linecap="round"/><path d="M19 33q5 5 10 0" fill="none" stroke="#d63a4a" stroke-width="2.5" stroke-linecap="round"/></svg>
+            <p><b>おやぶん</b>　ゴールの まえで まっているよ。つつめないと「おしい！」に なって、つぎの ステージに すすめないよ。パワーアップして もういちど！</p>
+          </div>
+        </article>
+
+        <article class="howto-card">
+          <h3><span class="howto-num">8</span>ゴールと ほし</h3>
+          <div class="howto-row">
+            <img data-asset="starOn" alt="" />
+            <p>あつまった にんずうで、ほしが 1〜3こ もらえるよ。おおいほど かいだんを たかく のぼれるよ。</p>
+          </div>
+          <p class="howto-note">75人 あつまると、とくべつな ことが おきるよ！</p>
+        </article>
+
+        <article class="howto-card">
+          <h3><span class="howto-num">9</span>おほしさまで ごほうび</h3>
+          <p>みちの おほしさまを ひろって ためよう。「ステージを えらんでね」の がめんで、はじめの にんずうや シャボン玉の つよさを ふやせるよ。</p>
+        </article>
+
+        <button id="btn-howto-back" class="btn btn-sub">もどる</button>
       </section>
 
       <!-- ===== ステージえらび ===== -->
