@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800;900&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="./assets/index-BDdatHy5.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-N_hPqoG5.css">
+    <script type="module" crossorigin src="./assets/index-BVkvW5HQ.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CZIuB5gi.css">
   </head>
   <body>
     <div id="app">
@@ -84,7 +84,7 @@
 
         <article class="howto-card">
           <h3><span class="howto-num">6</span>おおきな シャボン玉</h3>
-          <p>シャボン玉を あてたり、おほしさまを ひろったり すると、ボタンの まわりが たまるよ。いっぱいに なったら ボタンを おそう。まえの みんなを いっきに つつむよ！</p>
+          <p>シャボン玉を あてたり、おほしさまを ひろったり すると、ボタンの まわりが たまるよ。いっぱいに なったら ボタンを おそう。まえの みんなを いっきに つつむよ！ おやぶんには すこしだけ きくよ。</p>
         </article>
 
         <article class="howto-card">
@@ -95,7 +95,7 @@
           </div>
           <div class="howto-row">
             <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="29" r="17" fill="#d9c8ff"/><path d="M13 15l1-11 6 6 4-7 4 7 6-6 1 11z" fill="#ffc93a"/><path d="M15 26q3-4 6 0M27 26q3-4 6 0" fill="none" stroke="#4a2c20" stroke-width="2.5" stroke-linecap="round"/><path d="M19 33q5 5 10 0" fill="none" stroke="#d63a4a" stroke-width="2.5" stroke-linecap="round"/></svg>
-            <p><b>おやぶん</b>　ゴールの まえで まっているよ。つつめないと「おしい！」に なって、つぎの ステージに すすめないよ。パワーアップして もういちど！</p>
+            <p><b>おやぶん</b>　ゴールの まえで まっているよ。つつめないと「おしい！」。でも だいじょうぶ！ もういちど あそぶと、みんなの おうえんで つよくなるよ。</p>
           </div>
         </article>
 
@@ -143,6 +143,7 @@
         <div id="guide">
           <div class="guide-hand"></div>
           <p>ゆびで さゆうに うごかしてね</p>
+          <p id="guide-cheer" hidden>みんなの おうえんで つよくなったよ！</p>
           <p class="guide-start">タッチで スタート！</p>
         </div>
         <div id="hud-power"></div>
@@ -178,6 +179,13 @@
           <div id="clear-next">
             <div id="clear-bar"><div id="clear-bar-fill"></div><span class="bar-star"></span></div>
             <p id="clear-hint"></p>
+          </div>
+          <div id="clear-help" hidden>
+            <p class="help-title">つぎは こうしよう！</p>
+            <p class="howto-chips"><b class="chip power">つよさ</b><b class="chip rapid">かず</b><b class="chip big">おおきさ</b></p>
+            <p>この ゲートを とおろう</p>
+            <p class="help-cheer">みんなの おうえんで シャボン玉も つよくなるよ！</p>
+            <button id="btn-shop" class="btn btn-small" hidden>おほしさまで ごほうびを もらう</button>
           </div>
           <button id="btn-next" class="btn">つぎの ステージへ</button>
           <div class="clear-buttons">
